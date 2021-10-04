@@ -1,9 +1,10 @@
 function setup() {
   createCanvas(windowWidth, windowHeight);
+  background(frameCount*0.1%255,frameCount+20%255,frameCount*2%255);
 }
 
 function draw() {
-  background(frameCount*0.1%255,frameCount+20%255,frameCount*2%255);
+
   stroke(frameCount%255,frameCount%255,255);
   translate(frameCount*0.5%windowWidth,frameCount*0.5%windowHeight)
   rotate(frameCount*0.02);
